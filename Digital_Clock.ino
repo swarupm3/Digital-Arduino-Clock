@@ -102,11 +102,11 @@ void loop() {
       int d3 = (displayValue / 10) % 10;      // Tens
       int d4 = displayValue % 10;             // Ones
       displayDigit(d1, 1);
-      delay(4); // Reduce delay for smoother display
+      delay(4); 
       displayDigit(d2, 2);
       delay(4);
       displayDigit(d3, 3);
-      delay(4); // Reduce delay for smoother display
+      delay(4); 
       displayDigit(d4, 4);
       delay(4);
       if (SetupSwitchMapped < 50) {  
@@ -119,16 +119,16 @@ void loop() {
       }
   } else {
       displayDigit(saved1, 1);
-      delay(4); // Reduce delay for smoother display
+      delay(4); 
       displayDigit(saved2, 2);
       delay(4);
       displayDigit(saved3, 3);
-      delay(4); // Reduce delay for smoother display
+      delay(4); 
       displayDigit(saved4, 4);
       delay(4);
 
       if (millis() - lastIncrementTime >= 60000) {
-        lastIncrementTime = millis();  // Update the time of last increment
+        lastIncrementTime = millis();  
 
         // Increment the time every minute
         savedTotalmins++;
